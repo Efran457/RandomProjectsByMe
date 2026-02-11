@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+    <div class="emoji">🎉</div>
+    <h1>Welcome to My Website!</h1>
+    <p>This is a simple Flask website with custom CSS styling.</p>
+    <div class="nav">
+        <a href="{{ url_for('about') }}">About</a>
+        <a href="{{ url_for('game') }}">Play Box Demo</a>
+    </div>
+</div>
+</body>
+</html>
